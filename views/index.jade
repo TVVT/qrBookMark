@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  a(href="javascript:(function(){var d = document,a = 'setAttribute',s = d.createElement('script'),head = d.head||d.getElementsByTagName('head')[0];s[a]('type','text/javascript');s[a]('src','#{baseUrl}/scripts/getBookMark.js'); head.appendChild(s);})();")= title
+  p 拖动上方链接获取
+  p qrBookMark会自动生成当前页面的url二维码

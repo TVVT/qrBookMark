@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="/stylesheets/bookmark.css">
+<body>
+	<div class="bookContent">
+		<h1>二维码</h1>
+		<img class="qrCodeImg" id="qrCodeImg" src="" alt="">
+		<br>
+		<div class="copy">&copy;1号店 TVVT </div>
+	</div>
+
+</body>
+	<!-- todo 验证表单 -->
+	<script type="text/javascript">
+		(function(window){
+			var url = window.location.href;
+			var imgUrl = url.substring(url.lastIndexOf('?')+5,url.length);
+			document.getElementById('qrCodeImg').src = 'http://192.168.112.94:3000/qr?url='+imgUrl;
+		})(window);
+	</script>
+</html>
