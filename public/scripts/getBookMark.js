@@ -29,7 +29,7 @@
 		, 'background-color:#fff;'
 	].join(';');
 
-	i.src = 'http://localhost:7000/htmls/qr.html?url='+url;
+	i.src = 'http://192.168.112.94:7000/htmls/qr.html?url='+url;
 	i.onload = function () {
 		i.focus();
 	};
