@@ -26,7 +26,10 @@
 		, 'border:none'
 		, 'position:absolute'
 		, 'z-index:999999'
-		, 'background-color:#fff;'
+		, 'background-color:#fff'
+		, 'left:0'
+		, 'top:0'
+		, ''
 	].join(';');
 
 	i.src = 'http://192.168.112.94:7000/htmls/qr.html?url='+url;
