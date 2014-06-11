@@ -17,7 +17,7 @@ var link = 'http://' + ipAddress + ':7000';
 /* GET home page. */
 router.get('/', function(req, res) {
     res.render('index', {
-        title: '获取qrBookMark',
+        title: '二维码',
         baseUrl:link
     });
 });
